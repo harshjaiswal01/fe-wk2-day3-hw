@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GreenScape Lawn Mowing Services</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            display: grid;
+            grid-template-areas: 
+                "header"
+                "main"
+                "footer";
+            grid-template-rows: auto 1fr auto;
+            min-height: 100vh;
+        }
+        header {
+            grid-area: header;
+            background: url('lawnmower.jpg') no-repeat center center/cover;
+            color: white;
+            text-align: center;
+            padding: 50px 20px;
+            font-size: 2rem;
+            font-weight: bold;
+        }
+        .main-content {
+            display: grid;
+            grid-template-areas: "content sidebar";
+            grid-template-columns: 2fr 1fr;
+            grid-area: main;
+            gap: 20px;
+            padding: 20px;
+        }
+        .content {
+            grid-area: content;
+            background-color: #f4f4f4;
+            padding: 20px;
+            border: 1px solid #ddd;
+        }
+        .sidebar {
+            grid-area: sidebar;
+            background-color: #e9ecef;
+            padding: 20px;
+            border: 1px solid #ddd;
+        }
+        footer {
+            grid-area: footer;
+            display: flex;
+            justify-content: space-around;
+            background-color: #333;
+            color: white;
+            padding: 20px;
+        }
+        footer div {
+            flex: 1;
+            text-align: center;
+        }
+        @media (max-width: 768px) {
+            .main-content {
+                grid-template-areas: 
+                    "content"
+                    "sidebar";
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        GreenScape Lawn Mowing Services
+    </header>
+    <div class="main-content">
+        <div class="content">
+            <h2>Welcome to GreenScape</h2>
+            <p>We provide top-notch lawn mowing services to keep your lawn looking pristine.</p>
+        </div>
+        <div class="sidebar">
+            <h2>Services</h2>
+            <ul>
+                <li>Regular Lawn Mowing</li>
+                <li>Edging and Trimming</li>
+                <li>Fertilization</li>
+            </ul>
+        </div>
+    </div>
+    <footer>
+        <div>Contact Us</div>
+        <div>About Us</div>
+        <div>Services</div>
+    </footer>
+</body>
+</html>

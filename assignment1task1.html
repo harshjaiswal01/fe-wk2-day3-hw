@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Flexbox Layout</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+        header {
+            background: url('header-bg.jpg') no-repeat center center/cover;
+            color: white;
+            text-align: center;
+            padding: 50px 20px;
+            font-size: 2rem;
+            font-weight: bold;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #333;
+        }
+        nav a {
+            color: white;
+            padding: 14px 20px;
+            text-decoration: none;
+            text-align: center;
+        }
+        nav a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+        .main-content {
+            display: flex;
+            flex-direction: column;
+            padding: 20px;
+        }
+        .main-content > div {
+            margin-bottom: 20px;
+            padding: 20px;
+            background-color: #f4f4f4;
+            border: 1px solid #ddd;
+        }
+        footer {
+            display: flex;
+            justify-content: space-around;
+            background-color: #333;
+            color: white;
+            padding: 20px;
+        }
+        footer div {
+            flex: 1;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        Welcome to My Website
+    </header>
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">Profile</a>
+        <a href="#">About</a>
+    </nav>
+    <div class="main-content">
+        <div>
+            <h2>Content Section 1</h2>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolore officia mollitia quos. Modi facere, molestias, voluptatibus earum quam inventore consectetur nemo perferendis officia minus placeat eligendi explicabo. Et, quos. Odit?</p>
+        </div>
+        <div>
+            <h2>Content Section 2</h2>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Optio cumque numquam, totam velit quas alias atque dolores vero, magnam adipisci accusamus molestiae corrupti quod aliquam quaerat ut laboriosam quae officia?</p>
+        </div>
+    </div>
+    <footer>
+        <div>Contact Us</div>
+        <div>Events</div>
+        <div>Blog</div>
+    </footer>
+</body>
+</html>
